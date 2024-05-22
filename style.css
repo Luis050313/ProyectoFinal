@@ -1,0 +1,258 @@
+/*General*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #F4F5F7;
+}
+.inicio h1{
+    color: white;
+    background-color: #E84E2B;
+    font-family: "Exo 2";
+    font-size:xx-large;
+    height: 80px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0;
+    position: relative;
+}
+.inicio h2{
+    font-family: "Calibri";
+    color: white;
+    background-color: #EA6A5C;
+    font-size: x-large;
+    border-radius: 10px;
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    padding-left: 20px;
+    position: absolute;
+    right: 20px;
+    top: -5px;
+}
+nav.indice{
+    display: block;
+    min-width:min-content;
+    margin-left: 0px;
+    margin-right: 0px;
+    border:none;
+    text-align: center;
+}
+/*Indice*/
+.indice h2{
+    display: none;
+}
+.indice a{
+    font-family: "Exo 2";
+    font-size:larger;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    background-color: #ED7559;
+    color:white;
+    width:18%;
+    height:auto;
+    padding: 10px .5% 10px .5%;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.indice a:hover{
+    font-weight:900;
+    background-color: #fc7373;
+    transition: 0.s;
+}
+
+/*Portadas*/
+h2.portada{
+    display: none;
+}
+.portada{
+    width: 100%;
+    display: inline-block;
+}
+/*Botón de regreso*/
+.Boton{
+    width: 3em;
+    height: 3em;
+    background-color: #E84E2B;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1em;
+    right: .4em;
+}
+.Boton img{
+    width: 60%;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+/*Temario*/
+div.fondoTemario{
+    width: 80%;
+    margin: 0 auto;
+}
+pre.temario{
+    width: max-content;
+    line-height: 1.5;
+    background-color: white;
+    border-radius: 2em;
+    border-style: solid;
+    border-color: #de4e19;
+    border-width: 1px;
+}
+pre.temario a{
+    font-size: 1.2em;
+    font-family: "Montserrat";
+    text-decoration: none;
+    color: black;
+}
+pre.temario a:hover{
+    color:#de4e19;
+}
+/*Artículos*/
+article.articulo{
+    margin-top: 2.5em;
+}
+.articulo h2{
+    font-size: 1.7em;
+    font-family: "Montserrat";
+    color: #de4e19;
+    width: 80%;
+    text-align: left;
+    margin: 1em auto;
+}
+.articulo h3{
+    font-size: 1.6em;
+    font-family: "Montserrat";
+    color: #E75D2A;
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+}
+.articulo h4{
+    font-size: 1.5em;
+    font-family: "Montserrat";
+    color:#bd9a26;
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+}
+.articulo h5{
+    font-size: 1.4em;
+    font-family: "Montserrat";
+    color:#26bda9;
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+}
+.articulo p{ 
+    display: block;
+    width: 80%;
+    font-family: "Exo 2";
+    font-size: 1.4em;
+    text-align: justify;
+    margin: 1em auto;
+}
+.articulo img{
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+/*Linea*/
+hr{
+    width: 80%;
+    border-style: solid;
+    color:#de4e19;
+}
+/*Pie de página*/
+footer.inicio{
+    text-align: center;
+    font-size: 1em;
+    font-family: "Montserrat";
+    line-height: 1.5;
+    color: white;
+    background-color: #E84E2B;
+    max-height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 100px;
+}
+.logo{
+    font-family: "Exo 2";
+    font-size: 1.3em;
+    font-weight: bold;
+}
+/*Pantallas pequeñas*/
+@media screen and (max-width: 550px) {
+    *{
+        font-size: smaller;
+    }
+    .inicio h1{
+        font-size: large;
+        height: 50px;
+        padding:  12px 0 0 10px;
+    }
+    .inicio h2{
+        font-size: small;
+        height: 35px;
+        width: 70px;
+        padding: auto;
+        padding-left: 18px;
+        position: absolute;
+        right: 5px;
+        top: -3px;
+    }
+    pre.temario{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .articulo img{
+        width: 80%;
+    }
+    nav.indice{
+        font-size: 8px;
+    }
+    footer.inicio{
+        margin-top: 50px;
+    }
+}
+/*Pantallas Grandes*/
+@media screen and (min-width: 1367px) {
+    .articulo img{
+        width: 40%;
+    }
+}
+.Tecnológico td{
+    width: 10em;
+    font-size: 1em;
+    font-family: "Montserrat";
+    color: #bd9a26;
+    font-weight: bolder;
+    text-align: center;
+}
+.Tecnológico img{
+    height: 9em;
+}
+.Tecnológico h1{
+    font-size: 1.8em;
+    font-family: "Montserrat";
+    color: #de4e19;
+    width: 80%;
+    text-align: center;
+    margin: 1em auto;
+}
+.Tecnológico h2{
+    font-size: 1.6em;
+    font-family: "Montserrat";
+    color: #219e8d;
+    width: 80%;
+    text-align: center;
+    margin: 1em auto;
+}
+.Tecnológico table{
+    width: 90%;
+    margin: 1em auto;
+}

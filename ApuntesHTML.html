@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Cambiar estilo a todos los h2-->
+        <style>h2{color:darkcyan; font-size: 20pt; }</style>
+        <meta charset="utf-8">
+        <title>ApuntesHTML</title>
+        <h1>Apuntes de HTML</h1>
+    </head>
+    <body>
+        <!--Estructura de body-->
+        <header></header>
+        <section>
+            <article></article>
+            <article></article>
+        </section>
+        <footer></footer>
+
+        <hr color="red"  width="80%"> <!--Linea divisora-->
+        <!--Comentarios-->
+        <p>Comentarios</p>
+        <h2>Texto</h2>
+        <p>La etiqueta em hace <em>enfasis</em>.</p>
+        <p>Esta etiqueta <span style="color:firebrick">span</span> también hace referencia</p>
+        <p><b>      Texto en negritas</b></p>
+        <p><strong> Texto en negritas fuertes</strong></p>
+        <p><i>      Texto en cursiva</i></p>
+        <p><u>      Texto subrayado</u></p>
+        <p><em>     Titulo de Imagen</em></p>
+        <p><mark>   Texto marcado</mark></p>
+        <p><small>  Texto prqueño</small></p>
+        <p><strike> Texto tachado </strike></p>
+        <p><ins>    Texto Subrayado</ins></p>
+        <p><sub>    Texto con estilo</sub></p>
+        <p><sup>    Texto con estilo</sup></p>
+        <p>Hola. <br> Salto de línea</p>
+
+        <h2>Imagenes</h2>
+        <p><a href="Fundamentos.html">¿Cómo hacer un link?</a></p>
+        <p><a target="_blank" href="Fundamentos.html">¿Cómo hacer un link que abra una pestaña nueva?</a></p>
+        <p><img src="cebra.jpg" alt="Texto de la imagen" height="70" width="70"> La etiqueta imagen es una etiqueta que no se cierra</p>
+
+        <h2>Listas</h2>
+        <h3>Lista enumerada ordenada</h3>
+        <ol>
+            <li>Primer elemento</li>
+            <li>Segundo elemento</li>
+            <li value="1">Tercer elemento</li>
+            <li>Cuarto elemento</li>
+            <li>Quinto elemento</li>
+        </ol>
+
+        <h3>Lista de viñetas no ordenada</h3>
+        <ul>
+            <li>Primer elemento</li>
+            <li>Segundo elemento</li>
+            <li>Tercer elemento</li>
+        </ul>
+
+        <h3>Lista de definiciones</h3>
+        <dl>
+            <dt>Palabra 1</dt>
+            <dd>Es la definición de algo</dd>
+            <dt>Palabra 2</dt>
+            <dd>Es la definición de algo</dd>
+        </dl>
+
+        <h3>Lista modificada</h3>
+        <ol type="A">
+            <li>Primero</li>
+            <li>Segundo</li>
+            <li>tercero</li>
+        </ol>
+
+        <h3>Tablas</h3>
+        <table bordercolor="#987654">
+            <tr>
+                <th>Nombre</th> <!--Th es para cabecera-->
+                <th>Apellido</th>
+                <th>Edad</th>
+            </tr>
+            <tr>
+                <td>Luis</td>
+                <td>García</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Belén</td>
+                <td>Cisneros</td>
+                <td>18</td>
+            </tr>
+        </table>
+
+        <h3>Fórmularios</h3>
+        <form action="Tec/" method="get">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Jorge Antonio"><br>
+            <input type="submit"><br>
+            <button type="reset">Reset</button>
+        </form>
+
+    </body>
+</html>

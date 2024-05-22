@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPUCEPTO</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../icon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@294&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@95.4,345&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@413&display=swap');
+    </style>
+</head>
+<body>
+    <header class="inicio">
+        <h1>compucepto</h1>
+        <h2>Indice</h2>
+    </header>
+    <nav class="indice">
+        <h2>Indice</h2>
+        <a href="../Unit1/Unidad 1.html">UNIDAD 1</a>
+        <a href="../index.html">INICIO</a>
+        <a href="../Unit3/Unidad 3.html">UNIDAD 3</a>
+        <a href="../Unit4/Unidad 4.html">UNIDAD 4</a>
+        <a href="../Prácticas/Practicas.html">PRÁCTICAS</a>
+    </nav>
+    <!--Portada-->
+    <h2 class="portada">Unidad 2 Porcesador</h2>
+    <img class="portada" src="Unidad2.jpg" alt="procesador"><br id="Temario">
+    <!--Indice-->
+    <div class="fondoTemario">
+        <pre class="temario">
+            
+            <a >Temario:</a> 
+            
+            <a href="#2.1">2.1 Organización del Procesador</a>            
+            <a href="#2.2">2.2 Estructura de Registros</a> 
+                <a href="#2.2.1">2.2.1 Registros Visibles para el Usuario</a>
+                <a href="#2.2.2">2.2.2 Registros de Control y de Estados</a>
+                <a href="#2.2.3">2.2.3 Ejemplo de Registros de CPU Reales       </a>
+            <a href="#2.3">2.3 El Ciclo de Instrucción</a>
+                <a href="#2.3.1">2.3.1 Ciclo Fetch - Decode - Execute</a>
+                <a href="#2.3.2">2.3.2 Segmentación de Instrucciones</a>
+                <a href="#2.3.3">2.3.3 Conjunto de Instrucciones</a>
+                <a href="#2.3.4">2.3.4 Modos de Direccionamiento</a>
+            <a href="#2.4">2.4 Casos de Estudio de CPU Reales</a>
+        </pre>
+    </div>
+    <!--Temas-->
+    <article class="articulo">
+        <h2 id="2.1">2.1 Organización del Procesador</h2>
+        <p>
+            La Unidad de Procesamiento (CPU) controla el funcionamiento del computador y lleva a cabo sus funciones de procesamien
+            to de datos. Frecuentemente se le llama procesador. Un procesador, incluye tanto registros visibles por el usuario com
+            o registros de control/estado. <br> <br>
+            El CPU está constituido por: <b>Registros visibles para el usuario; Registros de control; La unidad de Control;
+                Unidad Aritmético-Lógica.</b> 
+        </p>
+        <img src="2.1 Partes.png" alt="Partes del CPU">
+        <h2 id="2.2">2.2 Estructura de Registros</h2>
+        <p>
+            Un registro es una memoria que está ubicada en el procesador y se encuentra en el nivel más alto en la jerarquía de 
+            memoria, por lo tanto, tiene una alta velocidad pero con poca capacidad para almacenar datos que va desde los 4 bits 
+            hasta los 64 bits dependiendo del procesador que se utilice. Los datos que almacena son los que se usan frecuentemente.
+        </p>
+        <img src="2.2 Registros.png" alt="Registros"> <br>
+        <h4 id="2.2.1">2.2.1 Registros Visibles para el Usuario</h4>
+        <p>
+            Un registro visible al usuario es aquel que puede ser referenciado por medio del lenguaje máquina que ejecuta la CPU.<br> <br>
+            Permiten al programador de lenguaje máquina o de ensamblador minimizar las referencias a memoria principal por medio 
+            de la optimización del uso de registros. <br> <br>
+            Su clasificación es: <b> Uso general; Datos; Direcciones; Códigos de Condición; Índice; Segmento; Apuntadores; 
+            Banderas; Instrucción; Control de Estado.</b>
+        </p>
+        <h4 id="2.2.2">2.2.2 Registros de Control y de Estados</h4>
+        <p>
+            Son utilizados por la unidad de control para controlar el funcionamiento del procesador y por programas privilegiados 
+            del sistema operativo para controlar la ejecución de programas. Hay diversos registros del procesador que se emplean 
+            para controlar su funcionamiento.
+        </p>
+        <img src="2.2.2 Registros de Control.png" alt="Registros de Control">
+        <h4 id="2.2.3">2.2.3 Ejemplo de Registros de CPU Reales</h4><br>
+        <img src="2.2.3 Ejemplo.jpg" alt="Administrador de Tareas de Windows">
+        <h2 id="2.3">2.3 El Ciclo de Instrucción</h2>
+        <p>
+            Es también llamado ciclo de fetch-and-execute o ciclo de fetchdecode-execute) es el período que tarda la unidad central
+             de proceso (CPU) en ejecutar una instrucción de lenguaje máquina. <br><br>
+            Cada instrucción del juego de instrucciones de una CPU puede requerir diferente número de ciclos de instrucción para su
+             ejecución. Un ciclo de instrucción está formado por uno o más ciclos máquina.
+        </p>
+        <h4 id="2.3.1">2.3.1 Ciclo Fetch - Decode - Execute</h4><br>
+        <h5>1. Buscar la instrucción en la memoria principal</h5>
+        <p>
+            El valor del MDR es colocado en el Registro de Instrucción Actual (CIR), un circuito que guarda la instrucción tempora
+            lmente de manera que pueda ser decodificada y ejecutada.
+        </p>
+        <h5>2. Decodificar la Instrucción</h5>
+        <p>
+            El decodificador de instrucción interpreta e implementa la instrucción.
+            El registro de instrucción (IR) mantiene la instrucción en curso mientras el contador de programa (PC, program counter)
+            guarda la dirección de memoria de la siguiente instrucción a ser ejecutada.
+            Se lee la dirección efectiva de la memoria principal si la instrucción tiene una dirección indirecta.
+        </p>
+        <h5>3. Ejcecutar la Instrucción</h5>
+        <p>
+            A partir del registro de instrucción, los datos que forman la instrucción son decodificados por la unidad de control. 
+            Ésta interpreta la información como una secuencia de señales de control que son enviadas a las unidades funcionales 
+            relevantes de la CPU para realizar la operación requerida por la instrucción.
+        </p>
+        <h5>4. Almacenar o Guardar Resultados</h5>
+        <p>
+            El resultado generado por la operación es almacenado en la memoria principal o enviado a un dispositivo de salida depen
+            diendo de la instrucción.
+            Basándose en los resultados de la operación, el contador de programa se incrementa para apuntar a la siguiente instruc
+            ción o se actualiza con una dirección diferente.
+        </p> <br>
+        <img src="2.3.1Ciclo.png" alt="Ciclo"><br>
+        <h4 id="2.3.2">2.3.2 Segmentación de Instrucciones</h4>
+        <p>
+            Es una técnica que permite implementar el paralelismo a nivel de instrucción en un único procesador.
+            La segmentación intenta tener ocupadas con instrucciones todas las partes del procesador, dividiendo las instrucciones 
+            en una serie de pasos secuenciales que efectuarán distintas unidades de la CPU, tratando en paralelo diferentes partes 
+            de las instrucciones. Permite una mayor tasa de transferencia efectiva por parte de la CPU.
+        </p>
+        <img src="2.3.2 Segmentacion.png" alt="Segmentación">
+        <h4 id="2.3.3">2.3.3 Conjunto de Instrucciones</h4>
+        <p>
+            Una máquina puede llegar a funcionar con un juego de instrucciones muy limitado), esto simplificaría mucho los circuitos
+            de la máquina. Sin embargo, un conjunto de instrucciones demasiado simplificado origina, como consecuencia, unos program
+            as demasiado complejos e ineficientes. <br><br>
+            Es necesario encontrar un compromiso entre la simplicidad del hardware y del software. Un mínimo para llegar a ese compro
+            miso se consigue con los tipos de instrucciones siguientes: Instrucciones de transferencia de datos. Instrucciones aritm
+            éticas. Instrucciones lógicas. Instrucciones de control del flujo del programa (bifurcaciones, bucles, procedimientos, etc.) Instrucciones de entrada y salida.
+        </p>
+        <h4 id="2.3.4">2.3.4 Modos de Direccionamiento</h4> <br>
+        <h5>1. Direccionamiento por registro</h5>
+        <p>
+            Donde los operandos son registros. Los datos a operar están contenidos en 2 registros de 32 bits y el resultado será 
+            colocado en otro registro, del mismo tamaño.
+        </p>
+        <img src="2.3.4.1D.png" alt="Por Registro"><br>
+        <h5>2. Direccionamiento base o desplazamiento</h5>
+        <p>
+            Donde uno de los operandos está en una localidad de memoria cuya dirección es la suma de un registro y una constante 
+            que forma parte de la misma instrucción.
+        </p>
+        <img src="2.3.4.2D.png" alt="Por Base"><br>
+        <h5>3. Direccionamiento Inmediato</h5>
+        <p>
+            Donde uno de los operandos es una constante que está en la misma instrucción.
+        </p>
+        <img src="2.3.4.3D.png" alt="Inmediato"><br>
+        <h5>4. Direccionamiento relativo al PC</h5>
+        <p>
+            Donde se forma una dirección sumando una constante, que está en la instrucción, con el registro PC (Program Counter). 
+            El resultado de la suma corresponde a la dirección destino si un brinco condicional se va a realizar.
+        </p>
+        <img src="2.3.4.4D.png" alt="Relativo al Pc"><br>
+        <h5>5. Direccionamiento pseudo directo</h5>
+        <p>
+            donde la dirección destino de un salto corresponde a la concatenación de 26 bits que están en la misma instrucción con 
+            los bits mas significativos del PC.
+        </p>
+        <img src="2.3.4.5D.png" alt="Pseudo Directo"><br>
+        <h2 id="2.4">2.4 Casos de Estudio de CPU Reales</h2>
+        <h4>Procesador Intel Core i9 - 14900K</h4> <br>
+        <h5>Tarjeta Gráfica: </h5> <p>Intel UHD Graphics 770. </p>
+        <h5>Velocidad: </h5> <p>3.20 GHz</p>
+        <h5>Núcleos: </h5> <p>24</p>
+        <h5>Hilos: </h5> <p>32</p>
+        <h5>Caché: </h5> <p>26 MB</p>
+        <h5>Compatibilidad: </h5> <p>Es compatible con una amplia gama de tipos de memoria, incluyendo DDR4-SDRAM y DDR5-SDRAM.</p>
+        <h5> Arquitectura: </h5> <p>Usan una arquitectura híbrida de desempeño que combina dos microarquitecturas de núcleos en un solo chip.</p>
+        <img src="intel.png" alt="Procesdador Intel i9">
+    </article>
+    <!--Botón de regreso-->
+    <div class="Boton"><a href="#Temario"><img src="../BotónArriba.png" alt="Botón"></a></div>
+    <!--Empieza-->
+    <footer class="inicio">
+        <p class="logo">compucepto</p>
+        <p> 
+            TecNM - Instituto Tecnlógico de Saltillo - Arquitectura de Computadoras 4:00 pm. <br>
+            Alumno. Luis Alberto García Posada <br> 
+            Wpp: 8443478097<br>
+            Correo: luisagp2005@gmail.com
+        </p>
+    </footer>
+</body>
+</html>
